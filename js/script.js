@@ -57,3 +57,41 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     fields[firstInvalid].el.focus();
   }
 });
+// Welcome popup (shows every time page loads)
+window.onload = function () {
+    alert("Welcome to The coffee spot\nEnjoy your visit!");
+};
+
+// Button actions (optional but nice)
+document.addEventListener("DOMContentLoaded", function () {
+
+    const buttons = document.querySelectorAll("button");
+
+    
+
+});
+// Smooth scroll for anchor links (if you add sections later)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+// Simple navbar shadow on scroll
+window.addEventListener("scroll", function () {
+    const nav = document.querySelector(".navbar");
+
+    if (window.scrollY > 50) {
+        nav.classList.add("shadow");
+    } else {
+        nav.classList.remove("shadow");
+    }
+});
