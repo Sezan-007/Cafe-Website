@@ -19,3 +19,220 @@ transition:0.3s;
 .card:hover{
 transform:scale(1.05);
 }
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body  */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* HERO SECTION (TOP IMAGE HALF SCREEN) */
+.hero {
+    height: 75vh;
+    background-image: url("cafe.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+
+/* Dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.3)
+    );
+}
+
+.hero h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(200, 182, 255, 0.75);
+    padding: 20px;
+    backdrop-filter: blur(6px);
+}
+
+/* NAVBAR */
+nav a {
+    text-decoration: none;
+    color: #4b0082;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* SECTION (scroll content) */
+section {
+    padding: 60px 20px;
+    background-color: rgba(200, 182, 255, 0.75);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* IMAGES */
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #b19cd9;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9370db;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(200, 182, 255, 0.75);
+    padding: 15px;
+    margin-top: 20px;
+    backdrop-filter: blur(6px);
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* HERO  */
+.about-hero {
+    height: 75vh;
+    background-image: url("cafe.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+/*  overlay style */
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.3)
+    );
+}
+
+.about-hero h1,
+.about-hero p {
+    position: relative;
+    z-index: 1;
+}
+
+/* HEADER  */
+header {
+    background-color: rgba(200, 182, 255, 0.75);
+    padding: 20px;
+    backdrop-filter: blur(6px);
+}
+
+/* NAVBAR */
+nav a {
+    text-decoration: none;
+    color: #4b0082;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* SECTION  */
+section {
+    padding: 60px 20px;
+    background-color: rgba(200, 182, 255, 0.75);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* IMAGE */
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* BUTTONS (same as homepage) */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #b19cd9;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9370db;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(200, 182, 255, 0.75);
+    padding: 15px;
+    margin-top: 20px;
+    backdrop-filter: blur(6px);
+}
